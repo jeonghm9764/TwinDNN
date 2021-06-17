@@ -1,0 +1,252 @@
+
+
+================================================================
+== Vivado HLS Report for 'compute_engine_16'
+================================================================
+* Date:           Tue May 26 04:13:23 2020
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        accel_16
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu3eg-sbva484-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.401|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|     16|       -|      -|    -|
+|Expression       |        -|      -|       0|    959|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        -|      -|       -|      -|    -|
+|Memory           |        -|      -|       -|      -|    -|
+|Multiplexer      |        -|      -|       -|      9|    -|
+|Register         |        -|      -|      89|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        0|     16|      89|    968|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      432|    360|  141120|  70560|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        0|      4|   ~0   |      1|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    +--------------------------+----------------------+-----------+
+    |         Instance         |        Module        | Expression|
+    +--------------------------+----------------------+-----------+
+    |accel_16_mul_mul_bkb_U1   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U2   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U3   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U4   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U5   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U6   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U7   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U8   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U9   |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U10  |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U11  |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U12  |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U13  |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U14  |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U15  |accel_16_mul_mul_bkb  |  i0 * i1  |
+    |accel_16_mul_mul_bkb_U16  |accel_16_mul_mul_bkb  |  i0 * i1  |
+    +--------------------------+----------------------+-----------+
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |add_ln1192_100_fu_1280_p2  |     +    |      0|  0|  11|           3|           3|
+    |add_ln1192_101_fu_1290_p2  |     +    |      0|  0|  12|           4|           4|
+    |add_ln1192_102_fu_1300_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_103_fu_1310_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_104_fu_1320_p2  |     +    |      0|  0|  34|          27|          27|
+    |add_ln1192_105_fu_1330_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_106_fu_1340_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_107_fu_1350_p2  |     +    |      0|  0|  34|          27|          27|
+    |add_ln1192_108_fu_1360_p2  |     +    |      0|  0|  35|          28|          28|
+    |add_ln1192_110_fu_1376_p2  |     +    |      0|  0|   9|           2|           2|
+    |add_ln1192_111_fu_1386_p2  |     +    |      0|  0|   9|           2|           2|
+    |add_ln1192_112_fu_1396_p2  |     +    |      0|  0|  11|           3|           3|
+    |add_ln1192_113_fu_1406_p2  |     +    |      0|  0|   9|           2|           2|
+    |add_ln1192_114_fu_1416_p2  |     +    |      0|  0|   9|           2|           2|
+    |add_ln1192_115_fu_1426_p2  |     +    |      0|  0|  11|           3|           3|
+    |add_ln1192_116_fu_1436_p2  |     +    |      0|  0|  12|           4|           4|
+    |add_ln1192_117_fu_1446_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_118_fu_1456_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_119_fu_1466_p2  |     +    |      0|  0|  34|          27|          27|
+    |add_ln1192_120_fu_1476_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_121_fu_1486_p2  |     +    |      0|  0|  33|          26|          26|
+    |add_ln1192_122_fu_1496_p2  |     +    |      0|  0|  34|          27|          27|
+    |add_ln1192_123_fu_1506_p2  |     +    |      0|  0|  35|          28|          28|
+    |add_ln1192_96_fu_1240_p2   |     +    |      0|  0|   9|           2|           2|
+    |add_ln1192_97_fu_1250_p2   |     +    |      0|  0|  11|           3|           3|
+    |add_ln1192_98_fu_1260_p2   |     +    |      0|  0|   9|           2|           2|
+    |add_ln1192_99_fu_1270_p2   |     +    |      0|  0|   9|           2|           2|
+    |add_ln1192_fu_1230_p2      |     +    |      0|  0|   9|           2|           2|
+    |p_Val2_34_fu_1370_p2       |     +    |      0|  0|  36|          29|          29|
+    |p_Val2_35_fu_1516_p2       |     +    |      0|  0|  36|          29|          29|
+    |p_Val2_36_fu_1528_p2       |     +    |      0|  0|  37|          30|          30|
+    |and_ln406_10_fu_920_p2     |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_11_fu_980_p2     |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_12_fu_1040_p2    |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_13_fu_1100_p2    |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_14_fu_1160_p2    |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_15_fu_1220_p2    |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_1_fu_380_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_2_fu_440_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_3_fu_500_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_4_fu_560_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_5_fu_620_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_6_fu_680_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_7_fu_740_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_8_fu_800_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_9_fu_860_p2      |    and   |      0|  0|   2|           1|           1|
+    |and_ln406_fu_320_p2        |    and   |      0|  0|   2|           1|           1|
+    |r_10_fu_661_p2             |   icmp   |      0|  0|  11|           6|           1|
+    |r_11_fu_721_p2             |   icmp   |      0|  0|  11|           6|           1|
+    |r_13_fu_781_p2             |   icmp   |      0|  0|  11|           6|           1|
+    |r_14_fu_841_p2             |   icmp   |      0|  0|  11|           6|           1|
+    |r_16_fu_901_p2             |   icmp   |      0|  0|  11|           6|           1|
+    |r_17_fu_961_p2             |   icmp   |      0|  0|  11|           6|           1|
+    |r_19_fu_1021_p2            |   icmp   |      0|  0|  11|           6|           1|
+    |r_20_fu_1081_p2            |   icmp   |      0|  0|  11|           6|           1|
+    |r_21_fu_1141_p2            |   icmp   |      0|  0|  11|           6|           1|
+    |r_22_fu_1201_p2            |   icmp   |      0|  0|  11|           6|           1|
+    |r_2_fu_301_p2              |   icmp   |      0|  0|  11|           6|           1|
+    |r_3_fu_361_p2              |   icmp   |      0|  0|  11|           6|           1|
+    |r_4_fu_421_p2              |   icmp   |      0|  0|  11|           6|           1|
+    |r_5_fu_481_p2              |   icmp   |      0|  0|  11|           6|           1|
+    |r_7_fu_541_p2              |   icmp   |      0|  0|  11|           6|           1|
+    |r_8_fu_601_p2              |   icmp   |      0|  0|  11|           6|           1|
+    |or_ln406_130_fu_427_p2     |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_132_fu_547_p2     |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_134_fu_667_p2     |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_136_fu_787_p2     |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_138_fu_907_p2     |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_140_fu_1027_p2    |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_141_fu_1087_p2    |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_142_fu_1147_p2    |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_143_fu_1207_p2    |    or    |      0|  0|   2|           1|           1|
+    |or_ln406_fu_307_p2         |    or    |      0|  0|   2|           1|           1|
+    |r_12_fu_727_p2             |    or    |      0|  0|   2|           1|           1|
+    |r_15_fu_847_p2             |    or    |      0|  0|   2|           1|           1|
+    |r_18_fu_967_p2             |    or    |      0|  0|   2|           1|           1|
+    |r_6_fu_487_p2              |    or    |      0|  0|   2|           1|           1|
+    |r_9_fu_607_p2              |    or    |      0|  0|   2|           1|           1|
+    |r_fu_367_p2                |    or    |      0|  0|   2|           1|           1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |Total                      |          |      0|  0| 959|         624|         544|
+    +---------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_return  |   9|          2|   30|         60|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |   9|          2|   30|         60|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------+----+----+-----+-----------+
+    |        Name        | FF | LUT| Bits| Const Bits|
+    +--------------------+----+----+-----+-----------+
+    |ap_ce_reg           |   1|   0|    1|          0|
+    |ap_return_int_reg   |  30|   0|   30|          0|
+    |p_Val2_34_reg_1694  |  29|   0|   29|          0|
+    |p_Val2_35_reg_1699  |  29|   0|   29|          0|
+    +--------------------+----+----+-----+-----------+
+    |Total               |  89|   0|   89|          0|
+    +--------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------+-----+-----+------------+-------------------+--------------+
+| RTL Ports | Dir | Bits|  Protocol  |   Source Object   |    C Type    |
++-----------+-----+-----+------------+-------------------+--------------+
+|ap_clk     |  in |    1| ap_ctrl_hs | compute_engine_16 | return value |
+|ap_rst     |  in |    1| ap_ctrl_hs | compute_engine_16 | return value |
+|ap_return  | out |   30| ap_ctrl_hs | compute_engine_16 | return value |
+|ap_ce      |  in |    1| ap_ctrl_hs | compute_engine_16 | return value |
+|w0_V       |  in |   16|   ap_none  |        w0_V       |    scalar    |
+|b0_V       |  in |   16|   ap_none  |        b0_V       |    scalar    |
+|w1_V       |  in |   16|   ap_none  |        w1_V       |    scalar    |
+|b1_V       |  in |   16|   ap_none  |        b1_V       |    scalar    |
+|w2_V       |  in |   16|   ap_none  |        w2_V       |    scalar    |
+|b2_V       |  in |   16|   ap_none  |        b2_V       |    scalar    |
+|w3_V       |  in |   16|   ap_none  |        w3_V       |    scalar    |
+|b3_V       |  in |   16|   ap_none  |        b3_V       |    scalar    |
+|w4_V       |  in |   16|   ap_none  |        w4_V       |    scalar    |
+|b4_V       |  in |   16|   ap_none  |        b4_V       |    scalar    |
+|w5_V       |  in |   16|   ap_none  |        w5_V       |    scalar    |
+|b5_V       |  in |   16|   ap_none  |        b5_V       |    scalar    |
+|w6_V       |  in |   16|   ap_none  |        w6_V       |    scalar    |
+|b6_V       |  in |   16|   ap_none  |        b6_V       |    scalar    |
+|w7_V       |  in |   16|   ap_none  |        w7_V       |    scalar    |
+|b7_V       |  in |   16|   ap_none  |        b7_V       |    scalar    |
+|w8_V       |  in |   16|   ap_none  |        w8_V       |    scalar    |
+|b8_V       |  in |   16|   ap_none  |        b8_V       |    scalar    |
+|w9_V       |  in |   16|   ap_none  |        w9_V       |    scalar    |
+|b9_V       |  in |   16|   ap_none  |        b9_V       |    scalar    |
+|w10_V      |  in |   16|   ap_none  |       w10_V       |    scalar    |
+|b10_V      |  in |   16|   ap_none  |       b10_V       |    scalar    |
+|w11_V      |  in |   16|   ap_none  |       w11_V       |    scalar    |
+|b11_V      |  in |   16|   ap_none  |       b11_V       |    scalar    |
+|w12_V      |  in |   16|   ap_none  |       w12_V       |    scalar    |
+|b12_V      |  in |   16|   ap_none  |       b12_V       |    scalar    |
+|w13_V      |  in |   16|   ap_none  |       w13_V       |    scalar    |
+|b13_V      |  in |   16|   ap_none  |       b13_V       |    scalar    |
+|w14_V      |  in |   16|   ap_none  |       w14_V       |    scalar    |
+|b14_V      |  in |   16|   ap_none  |       b14_V       |    scalar    |
+|w15_V      |  in |   16|   ap_none  |       w15_V       |    scalar    |
+|b15_V      |  in |   16|   ap_none  |       b15_V       |    scalar    |
++-----------+-----+-----+------------+-------------------+--------------+
+

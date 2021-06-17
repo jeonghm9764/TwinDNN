@@ -1,0 +1,151 @@
+conv1/fuse 0.5272326 2.7193053
+conv2_1/expand/fuse 1.0853996 3.4655502
+conv2_1/dwise/fuse 526.176 3.33654
+conv2_1/linear/fuse 2.1281366 9.583275
+conv2_2/expand/fuse 0.63582796 1.2722237
+conv2_2/dwise/fuse 27.61597 5.668067
+conv2_2/linear/fuse 1.1609758 6.463734
+conv3_1/expand/fuse 0.4147633 1.2291449
+conv3_1/dwise/fuse 7.289326 2.401126
+conv3_1/linear/fuse 0.928045 1.9072036
+conv3_2/expand/fuse 0.32584035 0.98625535
+conv3_2/dwise/fuse 6.7434497 4.6678147
+conv3_2/linear/fuse 1.4368353 4.2148876
+conv4_1/expand/fuse 0.13385987 0.8221559
+conv4_1/dwise/fuse 337.32053 2.1662123
+conv4_1/linear/fuse 0.7734768 1.1290373
+conv4_2/expand/fuse 0.13931085 0.6409511
+conv4_2/dwise/fuse 1647.4803 2.1199627
+conv4_2/linear/fuse 0.6562813 0.88187253
+conv4_3/expand/fuse 0.233089 0.95384866
+conv4_3/dwise/fuse 6.965759 2.8021932
+conv4_3/linear/fuse 0.57815737 3.2767236
+conv4_4/expand/fuse 0.17148304 1.139285
+conv4_4/dwise/fuse 2786.6157 4.331401
+conv4_4/linear/fuse 0.7250239 1.7786696
+conv4_5/expand/fuse 0.1505144 0.56895006
+conv4_5/dwise/fuse 408.197 1.8801959
+conv4_5/linear/fuse 0.77224326 2.1785529
+conv4_6/expand/fuse 0.12109336 0.7500576
+conv4_6/dwise/fuse 7213.2114 2.2890322
+conv4_6/linear/fuse 0.89576405 2.8734
+conv4_7/expand/fuse 0.21279317 0.9839403
+conv4_7/dwise/fuse 54.761127 3.3398166
+conv4_7/linear/fuse 0.4563696 2.9261317
+conv5_1/expand/fuse 0.22186418 1.0396028
+conv5_1/dwise/fuse 36.991734 2.28984
+conv5_1/linear/fuse 0.7734207 2.8422813
+conv5_2/expand/fuse 0.11880427 0.8264188
+conv5_2/dwise/fuse 415.23563 2.3612175
+conv5_2/linear/fuse 0.7432177 2.1633303
+conv5_3/expand/fuse 0.17828348 0.93604463
+conv5_3/dwise/fuse 25.218163 4.5240226
+conv5_3/linear/fuse 0.352011 2.9143825
+conv6_1/expand/fuse 0.13793662 0.7117182
+conv6_1/dwise/fuse 910.76215 2.0185337
+conv6_1/linear/fuse 0.5274569 2.218153
+conv6_2/expand/fuse 0.116785854 0.6974605
+conv6_2/dwise/fuse 1151.7742 3.5460756
+conv6_2/linear/fuse 0.67324895 2.2151425
+conv6_3/expand/fuse 0.15614715 0.6632619
+conv6_3/dwise/fuse 453.00568 2.3363898
+conv6_3/linear/fuse 0.35280082 2.4427612
+conv6_4/fuse 0.9350002 1.9910289
+fc7 1.2921674 0.26742598
+
+data 2.56802
+label 999.0
+label_data_1_split_0 999.0
+label_data_1_split_1 999.0
+label_data_1_split_2 999.0
+conv1/fuse 9.696772
+conv2_1/expand/fuse 11.847029
+conv2_1/dwise/fuse 19.695177
+conv2_1/linear/fuse 41.459667
+conv2_2/expand/fuse 46.010002
+conv2_2/dwise/fuse 43.154274
+conv2_2/linear/fuse 37.984306
+conv2_2/linear/fuse_conv2_2/linear/fuse_0_split_0 37.984306
+conv2_2/linear/fuse_conv2_2/linear/fuse_0_split_1 37.984306
+conv3_1/expand/fuse 18.345974
+conv3_1/dwise/fuse 34.335533
+conv3_1/linear/fuse 24.40838
+block_3_1 27.886887
+conv3_2/expand/fuse 26.84398
+conv3_2/dwise/fuse 16.544418
+conv3_2/linear/fuse 15.892601
+conv3_2/linear/fuse_conv3_2/linear/fuse_0_split_0 15.892601
+conv3_2/linear/fuse_conv3_2/linear/fuse_0_split_1 15.892601
+conv4_1/expand/fuse 6.26628
+conv4_1/dwise/fuse 7.3345656
+conv4_1/linear/fuse 9.2245655
+block_4_1 15.920568
+block_4_1_block_4_1_0_split_0 15.920568
+block_4_1_block_4_1_0_split_1 15.920568
+conv4_2/expand/fuse 5.108462
+conv4_2/dwise/fuse 10.231125
+conv4_2/linear/fuse 5.784567
+block_4_2 20.111681
+conv4_3/expand/fuse 9.251297
+conv4_3/dwise/fuse 15.428801
+conv4_3/linear/fuse 11.065133
+conv4_3/linear/fuse_conv4_3/linear/fuse_0_split_0 11.065133
+conv4_3/linear/fuse_conv4_3/linear/fuse_0_split_1 11.065133
+conv4_4/expand/fuse 4.1508627
+conv4_4/dwise/fuse 9.683103
+conv4_4/linear/fuse 8.110401
+block_4_4 13.129089
+block_4_4_block_4_4_0_split_0 13.129089
+block_4_4_block_4_4_0_split_1 13.129089
+conv4_5/expand/fuse 4.2952113
+conv4_5/dwise/fuse 10.126045
+conv4_5/linear/fuse 10.424149
+block_4_5 14.842863
+block_4_5_block_4_5_0_split_0 14.842863
+block_4_5_block_4_5_0_split_1 14.842863
+conv4_6/expand/fuse 4.0202775
+conv4_6/dwise/fuse 285.8381
+conv4_6/linear/fuse 72.080315
+block_4_6 71.919785
+conv4_7/expand/fuse 13.867349
+conv4_7/dwise/fuse 20.714546
+conv4_7/linear/fuse 16.510063
+conv4_7/linear/fuse_conv4_7/linear/fuse_0_split_0 16.510063
+conv4_7/linear/fuse_conv4_7/linear/fuse_0_split_1 16.510063
+conv5_1/expand/fuse 5.9777026
+conv5_1/dwise/fuse 12.078163
+conv5_1/linear/fuse 8.795704
+block_5_1 19.22546
+block_5_1_block_5_1_0_split_0 19.22546
+block_5_1_block_5_1_0_split_1 19.22546
+conv5_2/expand/fuse 4.840255
+conv5_2/dwise/fuse 15.58154
+conv5_2/linear/fuse 12.865328
+block_5_2 16.589981
+conv5_3/expand/fuse 6.670805
+conv5_3/dwise/fuse 20.032265
+conv5_3/linear/fuse 10.568308
+conv5_3/linear/fuse_conv5_3/linear/fuse_0_split_0 10.568308
+conv5_3/linear/fuse_conv5_3/linear/fuse_0_split_1 10.568308
+conv6_1/expand/fuse 4.589026
+conv6_1/dwise/fuse 8.9278555
+conv6_1/linear/fuse 5.9725947
+block_6_1 12.112353
+block_6_1_block_6_1_0_split_0 12.112353
+block_6_1_block_6_1_0_split_1 12.112353
+conv6_2/expand/fuse 4.6716776
+conv6_2/dwise/fuse 9.764879
+conv6_2/linear/fuse 9.394725
+block_6_2 12.34452
+conv6_3/expand/fuse 5.2597146
+conv6_3/dwise/fuse 12.108751
+conv6_3/linear/fuse 6.2077217
+conv6_4/fuse 39.335262
+pool6 12.054656
+fc7 40.767036
+fc7_fc7_0_split_0 40.767036
+fc7_fc7_0_split_1 40.767036
+fc7_fc7_0_split_2 40.767036
+loss 1.798949
+top1/acc 0.8
+top5/acc 0.95
